@@ -15,7 +15,7 @@ public class Usuario {
     private String apellido;
     private String usuario;
     private String clave;
-    private int idRol; //llave foranea
+    private int idRol; 
     private int estado;
 
     public int getIdUsuario() {
