@@ -49,6 +49,13 @@
           <%
               }
           %>
+        <form id="formulario1" action="../../producto.jsp">
+
+            <p>ver productos <input type="text" name="productos"></p>
+
+            </form>
+
+        <button type="button" form="formulario1">ver!</button>
         
       </table>
     </body>
