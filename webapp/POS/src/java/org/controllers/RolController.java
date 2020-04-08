@@ -36,18 +36,52 @@ public class RolController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            
+            /*  PARA LISTAR
             RolDao rolDao = new RolDao();
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Datos Roles </title>");    
             for( Rol r : rolDao.listarRol()){
-                out.println("<li> idRol " + r.getIdRol() + "</li><br>");
+                out.println("<li> idRolxdxd " + r.getIdRol() + "</li><br>");
                  out.println("<li> descripcion " + r.getDescripcion() + "</li><br>");
             }
             out.println("<ul>");
             out.println("</ul>");
-            out.println("</html>");
+            out.println("</html>");*/
+            
+            /* PARA INGRESAR
+            String desc = request.getParameter("descripcion");
+            Rol rol = new Rol();
+            rol.setDescripcion(desc);
+            RolDao rolDao = new RolDao();
+            
+            boolean siInserto = rolDao.agregarRol(rol);
+            out.println("<p>" + Boolean.toString(siInserto) +  "</p>");
+            */
+            
+            /* PARA ELIMINAR
+                String idRol = request.getParameter("idRol");
+                //System.out.println(" el valor por url es " + idRol );
+                RolDao rolDao = new RolDao();
+                boolean siElimino = rolDao.eliminarRol( Integer.parseInt(idRol));
+            
+                if( siElimino == true ){
+                    response.sendRedirect("index.jsp");
+                }
+            */
+            
+            String idRol = request.getParameter("idRol");
+            RolDao rolDao = new RolDao();
+            Rol rolDB = new Rol();
+            rolDB = rolDao.unRol( Integer.parseInt(idRol) );
+            System.out.println(" el valor del rol seleccionado es  ");
+            System.out.println(" id :: " + rolDB.getIdRol() );
+            System.out.println(" desc :: " + rolDB.getDescripcion() );
+            
+            
+            
         }
     }
 

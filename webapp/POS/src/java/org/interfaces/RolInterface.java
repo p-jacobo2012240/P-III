@@ -18,8 +18,9 @@ public interface RolInterface {
     public List<Rol> listarRol();
     //editarProducto
     public boolean editarRol(Rol rol);
-    
     //eliminarProducto
     public boolean eliminarRol(int idRol);
+    //unRol
+    public Rol unRol( int idRol );
     
 }
