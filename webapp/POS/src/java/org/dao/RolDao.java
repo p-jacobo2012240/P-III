@@ -46,7 +46,7 @@ public class RolDao implements RolInterface {
     @Override
     public List<Rol> listarRol() {
         List<Rol> listaRolesDB = new ArrayList<Rol>();
-        this.querySql = "SELECT * FROM SEG.ROL";
+        this.querySql = "SELECT * FROM ROL";
         
         try {
             this.cnn.open();

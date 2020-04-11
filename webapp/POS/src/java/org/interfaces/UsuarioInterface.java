@@ -23,5 +23,5 @@ public interface UsuarioInterface {
     //login usuario
     public boolean login(String usuario,String clave );
     //listarUnUsuario
-    public boolean unUsuario(int idUsuario);
+    public Usuario unUsuario(int idUsuario);
 }

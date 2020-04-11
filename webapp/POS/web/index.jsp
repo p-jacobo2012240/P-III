@@ -3,60 +3,61 @@
     Created on : 16-mar-2020, 22:30:16
     Author     : Pablo Jacobo
 --%>
-
-<%@page import="java.util.Iterator" %>  
-<%@page import="java.util.List" %>
-<%@page import="org.models.Rol" %>
-<%@page import="org.dao.RolDao" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@9'></script>
+        <script src='https://cdn.jsdelivr.net/npm/promise-polyfill'></script>
         <title>JSP Page</title>
         <style>
-        table, th, td {
-          border: 1px solid black;
-        }
+            #max-space-card{
+                width: 40%;
+                margin: auto;
+                margin-top: 10%;
+            }
         </style>
     </head>
     <body>
-        <!--form method="post" action="RolController" >
-            <input name="descripcion" type="text" placeholder="ingrese desc..." />
-            <button type="submit" > Guardar </button>
-        </form-->
-        <table style="width:100%">
-        <tr>
-          <th>idRol</th>
-          <th>Descripcion</th> 
-          <th>Editar</th>
-          <th>Eliminar</th> 
-        </tr>
-       
-          <%
-              RolDao rolDao = new RolDao();
-              List<Rol> listaRolesDB = rolDao.listarRol();
-              Iterator<Rol> iteradorRol = listaRolesDB.iterator();
-              Rol rol = new Rol();
-              while( iteradorRol.hasNext() ){
-                  rol = iteradorRol.next();
-          %> 
-          <tr>
-          <td> <%= rol.getIdRol() %>  </td>
-          <td>  <%= rol.getDescripcion() %> </td>
-          <td> <a href="RolController?idRol=<%= rol.getIdRol()  %>" >Editar<a </td>
-          <td> <a href="RolController?idRol=<%= rol.getIdRol()  %>" >Eliminar<a </td><br>  
-          </tr>            
-          <%
-              }
-          %>
-        <form id="formulario1" action="../../producto.jsp">
-
-            <p>ver productos <input type="text" name="productos"></p>
-
-            </form>
-
-        <button type="button" form="formulario1">ver!</button>
         
-      </table>
+        <%
+        String login_msg=(String)request.getAttribute("error");  
+        if(login_msg!=null){
+            out.println("<script src='https://cdn.jsdelivr.net/npm/promise-polyfill'></script>");
+            out.println("<script src='https://cdn.jsdelivr.net/npm/sweetalert2@9'></script>");
+            out.println("<script>");
+            out.println(" setTimeout( function(){ Swal.fire('usuario/clave incorrect@', '', 'error' ) },200 )  ");
+            out.println("</script>");
+        }
+        %>
+        
+        <div class="card" id="max-space-card"  >
+            <div class="card-body">
+                <form method="post" action="UsuarioController" >
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Usuario</label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    id="exampleInputEmail1"
+                    value="hackobo"
+                    name="usuario"
+                    aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Clave</label>
+                  <input 
+                    type="password" 
+                    class="form-control" 
+                    name="clave"
+                    value="123abc"
+                    id="exampleInputPassword1">
+                </div>
+                <input  name="accion" type="hidden" value="login">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+              </form>
+            </div>
+        </div>
     </body>
 </html>

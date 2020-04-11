@@ -16,8 +16,17 @@ public class Usuario {
     private String usuario;
     private String clave;
     private int idRol; 
+    private String rolName;
     private int estado;
 
+    public String getRolName() {
+        return rolName;
+    }
+
+    public void setRolName(String rolName) {
+        this.rolName = rolName;
+    }
+    
     public int getIdUsuario() {
         return idUsuario;
     }
