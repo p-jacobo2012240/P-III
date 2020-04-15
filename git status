@@ -1,0 +1,72 @@
+[33mcommit 580d71e126e5d886bb80b622748795735cc5e8e3[m[33m ([m[1;36mHEAD -> [m[1;32mRonald[m[33m, [m[1;31morigin/Ronald[m[33m)[m
+Author: rgaliciaj <rgaliciaj@miumg.edu.gt>
+Date:   Thu Apr 2 22:53:12 2020 -0600
+
+    Dao de Cliente y Factura
+
+[33mcommit 04357ce1a1bab29bca13950ead2d2dc631fad695[m
+Author: rgaliciaj <rgaliciaj@miumg.edu.gt>
+Date:   Thu Apr 2 22:40:02 2020 -0600
+
+    Interfaces de Cliente y Factura
+
+[33mcommit 590bd350f789cc172236d7f8158adde67c38a0f5[m
+Author: rgaliciaj <rgaliciaj@miumg.edu.gt>
+Date:   Thu Apr 2 22:14:09 2020 -0600
+
+    modelo de cliente y factura
+
+[33mcommit e8e8b32874261d486998a61db20baac2ae3a8d83[m
+Merge: a5cbe29 7033d41
+Author: rgaliciaj <rgaliciaj@miumg.edu.gt>
+Date:   Thu Apr 2 21:39:17 2020 -0600
+
+    Merge remote-tracking branch 'origin/master' into Ronald
+
+[33mcommit 7033d4106db5f829f67896e45d885e5873e6a5ad[m
+Merge: b3cfdbc fcc7b40
+Author: Pablo J. Sánchez <pablojacobo1998@gmail.com>
+Date:   Thu Apr 2 21:30:48 2020 -0600
+
+    Merge pull request #7 from p-jacobo2012240/pablo
+    
+    base POS EE
+
+[33mcommit fcc7b40358cf5d163c489da9dc0395a9ce2783cc[m
+Author: pablojacobo24 <pjacobo@infonet.com.gt>
+Date:   Thu Apr 2 21:28:46 2020 -0600
+
+    base POS EE
+
+[33mcommit a5cbe2968d36ae081f546928a049b00fac599bbf[m
+Author: rgaliciaj <rgaliciaj@miumg.edu.gt>
+Date:   Tue Mar 31 22:58:07 2020 -0600
+
+    Script FacturaSQL
+
+[33mcommit ff92311f3c271ef24a419840f8a639ec7b5665c3[m
+Author: rgaliciaj <rgaliciaj@miumg.edu.gt>
+Date:   Tue Mar 31 22:21:40 2020 -0600
+
+    Script ClienteSQL
+
+[33mcommit b3cfdbc00eddee9b59bd7c85c776300301061bf1[m
+Merge: 8173631 2e50894
+Author: Pablo J. Sánchez <pablojacobo1998@gmail.com>
+Date:   Tue Mar 31 21:48:44 2020 -0600
+
+    Merge pull request #2 from p-jacobo2012240/pablo
+    
+    Crud {rol, usuarios}
+
+[33mcommit 2e5089498cecbaaf89ac5175c967a2f0141bba5e[m
+Author: pablojacobo24 <pjacobo@infonet.com.gt>
+Date:   Tue Mar 31 21:41:45 2020 -0600
+
+    Crud {rol, usuarios}
+
+[33mcommit 81736316c1d43e3f47909471d6e6b9e3be3da0a3[m
+Author: Pablo J. Sánchez <pablojacobo1998@gmail.com>
+Date:   Thu Mar 26 23:43:14 2020 -0600
+
+    Initial commit
