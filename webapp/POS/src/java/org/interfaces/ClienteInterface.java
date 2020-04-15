@@ -21,4 +21,6 @@ public interface ClienteInterface {
     public boolean editarCliente (Cliente cliente);
     //eliminarCliente
     public boolean eliminarCliente(int idCliente);
+    //Listar unCliente
+    public Cliente unCliente(int idCliente);
 }

@@ -18,53 +18,33 @@
             }
         </style>
     </head>
-    <body>
-        <nav class="navbar navbar-light bg-light justify-content-between">
+    <body style="background-image: url('https://c.wallhere.com/photos/74/bb/1920x1200_px_angle_minimalism_Optical_Illusion-1332977.jpg!d');">
+        <nav class="navbar navbar-dark bg-dark justify-content-between">
         <a class="navbar-brand"> bienvenido : <% request.getSession().getAttribute("user"); %>   </a>
             <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Salir</button>
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Salir</button>
             </form>
-        </nav>
+        </nav><br><br>
         <div class="container" >
-            <div class="row" id="margin-sts" >
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Usuarios</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="usuarios-list.jsp" class="btn btn-primary">Ir</a>
+            <div class="row" id="margin-sts"   >
+            <div class="col-sm-4">
+              <img class="card-img-top" src="https://lh6.googleusercontent.com/prnHxZ-kLGTC292CX8BfnGUyaMNC0SazoJ2YTHChGolkCvhgUgCrJxNW9ljl1q68QZpm8Q" style="width:85%">
+                <div class="card" style="width:85%">  
+                  <a href="facturas-list.jsp" class="btn btn-success btn-lg btn-block">FACTURA</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+              <img class="card-img-top" src="https://cdn.icon-icons.com/icons2/20/PNG/256/business_man_usersearch_thesearch_theclient_2356.png" style="width:85%">
+                <div class="card" style="width:85%">
+                  <a href="clientes-list.jsp" class="btn btn-success btn-lg btn-block">CLIENTE</a>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Productos</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Ir</a>
+            <div class="col-sm-4">
+              <img class="card-img-top" src="https://cdn.icon-icons.com/icons2/209/PNG/128/maintenance256_24835.png" style="width:85%">
+                <div class="card" style="width:85%">
+                  <a href="usuarios-list.jsp" class="btn btn-success btn-lg btn-block">MANTENIMIENTO</a>
                 </div>
               </div>
-            </div>
-            <br>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Facturas</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Ir</a>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Otros</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Ir</a>
-                </div>
-              </div>
-            </div>
             </div>
         </div>
     </body>

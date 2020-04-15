@@ -26,7 +26,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url('https://c.wallhere.com/photos/74/bb/1920x1200_px_angle_minimalism_Optical_Illusion-1332977.jpg!d');" >
         <div id="max-space-add" class="card">
             <div class="card-body">
                 <form method="post" action="UsuarioController" >
@@ -76,7 +76,8 @@
                         </select>
                     </div>
                     <input  name="accion" type="hidden" value="add">    
-                    <button type="submit" class="btn btn-success btn-lg btn-block">Agregar</button>
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Agregar</button><br>
+                    <a href="usuarios-list.jsp" type="button" class="btn btn-warning" style="width:100%">Regresar</a>
                 </form>
             </div>
         </div>

@@ -19,7 +19,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url('https://c.wallhere.com/photos/74/bb/1920x1200_px_angle_minimalism_Optical_Illusion-1332977.jpg!d');">
         
         <%
         String login_msg=(String)request.getAttribute("error");  
@@ -32,10 +32,11 @@
         }
         %>
         
-        <div class="card" id="max-space-card"  >
-            <div class="card-body">
+        <div class="card" id="max-space-card" image: style="background-image: url('https://c.wallhere.com/photos/3e/19/nature_landscape_minimalism_water_mist_long_exposure_blurred_reflection-99954.jpg!d ');"  >
+            <div class="card-body" >
                 <form method="post" action="UsuarioController" >
-                <div class="form-group">
+                <div class="form-group"  >
+                  <img class="card-img-top" src="https://icon-icons.com/icons2/11/PNG/32/customer_person_people_man_user_client_1629.png" style="width:5%">
                   <label for="exampleInputEmail1">Usuario</label>
                   <input 
                     type="text" 
@@ -45,7 +46,8 @@
                     name="usuario"
                     aria-describedby="emailHelp">
                 </div>
-                <div class="form-group">
+                <div class="form-group"  >
+                  <img class="card-img-top" src="https://icon-icons.com/icons2/46/PNG/32/password_userpassword_9564.png" style="width:5%">  
                   <label for="exampleInputPassword1">Clave</label>
                   <input 
                     type="password" 
@@ -55,9 +57,19 @@
                     id="exampleInputPassword1">
                 </div>
                 <input  name="accion" type="hidden" value="login">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                <button type="submit" class="btn btn-success btn-lg btn-block">Login</button>
               </form>
             </div>
         </div>
     </body>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Estudiantes de Ingeniería en Sistemas:
+          <br>
+        <a href="https://umg.edu.gt/"> Universidad Mariano Galvéz de Guatemala</a>
+      </div>
+    </footer>
+    <!-- Footer -->
 </html>
