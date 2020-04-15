@@ -21,5 +21,7 @@ public interface TipoProductoInterface {
     public boolean editarTipoProducto (TipoProducto tipoProducto);
     //eliminarTipoProducto
     public boolean eliminarTipoProducto (int idTipoProducto); 
+    //
+    public TipoProducto unTipoProducto (int idTipoProducto);
     
 }

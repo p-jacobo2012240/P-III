@@ -21,6 +21,4 @@ public interface FacturaInterface {
     public boolean editarFactura (Factura factura);
     //eliminarFactura
     public boolean eliminarFactura(int idFactura);
-    //una Factura
-    public Factura unaFactura(int idFactura);
 }

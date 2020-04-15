@@ -21,11 +21,13 @@ public class Conexion {
     private  Connection coneccion=null;    
     private ResultSet resultado = null;
      //Cadena de Conexion
+    
     String stringConnectionUrl = "jdbc:sqlserver://db-umg.cowbs9fgq896.us-east-1.rds.amazonaws.com:1433;databaseName=POS";
     //Driver o controlador JDBC
     String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     
-    public Connection open() throws ClassNotFoundException{        
+    public Connection open() throws ClassNotFoundException{  
+        System.out.println("Si conecto con la DB");
         try {  
                 Class.forName(driver);
                 coneccion = DriverManager.getConnection(stringConnectionUrl,"admin","developer2020");
